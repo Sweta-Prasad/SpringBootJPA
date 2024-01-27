@@ -24,16 +24,16 @@ public class SwaggerConfig {
                 .apiInfo(metaInfo());
     }
 
-    private ApiInfo metaInfo(){
+    private ApiInfo metaInfo() {
         ApiInfo apiInfo = new ApiInfo("Spring boot swagger example",
-                                        "Spring boot swagger example API for topics",
-                                        "1.0",
-                                        "Terms of service",
-                                        new Contact("sweta","http://www.example.com","sweta@gmail.com"),
-                                        "Apache license version 2.0",
-                                        "http://www.apache.org/license.html",
-                                        new ArrayList<>()
-                                        );
+                "Spring boot swagger example API for topics",
+                "1.0",
+                "Terms of service",
+                new Contact("sweta", "http://www.example.com", "sweta@gmail.com"),
+                "Apache license version 2.0",
+                "http://www.apache.org/license.html",
+                new ArrayList<>()
+        );
         return apiInfo;
     }
 }

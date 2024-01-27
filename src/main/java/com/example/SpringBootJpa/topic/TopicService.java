@@ -18,17 +18,17 @@ public class TopicService {
                                                 new Topic("jpa","jpa framework","jpa description")));
     */
 
-    public List<Topic> getAllTopics(){
+    public List<Topic> getAllTopics() {
         List<Topic> topics = new ArrayList<>();
         topicRepository.findAll().forEach(topics::add);
         return topics;
     }
 
-    public Topic getTopic(String id){
+    public Topic getTopic(String id) {
         return topicRepository.findById(id).orElse(null);
     }
 
-    public void addTopic(Topic topic){
+    public void addTopic(Topic topic) {
         topicRepository.save(topic);
     }
 
@@ -36,7 +36,7 @@ public class TopicService {
         topicRepository.save(topic);
     }
 
-    public void deleteTopic(String id){
+    public void deleteTopic(String id) {
         topicRepository.deleteById(id);
     }
 
